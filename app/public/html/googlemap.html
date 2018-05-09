@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My google map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+    #map{
+        height: 400px;
+        width: 100%;
+    }
+</style>
+<body>
+    <h1>My Google Map</h1>
+    <div id="map"></div>
+    <script>
+        function initMap(){
+            var options = {
+                zoom: 8,
+                center: {lat: 29.7604, lng: -95.3698}
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options)
+
+            var marker = new google.maps.Marker({ position:{lat: 29.6911, lng: -95.2091}, map: map})
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAplnT9YLn0UjsTaYW1ilnKqTQVwixz4v0&callback=initMap"
+        async defer></script>
+    
+</body>
+</html>

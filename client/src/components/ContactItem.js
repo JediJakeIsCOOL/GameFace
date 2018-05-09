@@ -13,7 +13,7 @@ class ContactItem extends Component{
        return(
            <div>
            <b>{this.props.contact.name}</b> - {this.props.contact.city} - {this.props.contact.state}
-           <a href="#" onClick={this.deleteContact.bind(this, this.props.contact.id)}>X</a>
+           <a href="" onClick={this.deleteContact.bind(this, this.props.contact.id)}>X</a>
            </div>
        )
     }

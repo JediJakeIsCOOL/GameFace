@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ContactMain from './components/ContactMain'
+
+import Routes from './components/router'
 import './App.css';
 
 class App extends Component {
@@ -12,10 +13,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Routes />
         {this.state.users.map(user =>
           <div key={user.id}> Hello {user.username}</div>
         )}
-        <ContactMain />
+        
       </div>
     );
   }
