@@ -1,0 +1,65 @@
+OOOOBBOAOOAOOOAAOAOOOOOAAOOOOOOAAOOAOOOOAOOOOOiOOBOAAOAmport React from 'react';
+OimportOBBO ReactDOM from 'react-dom';
+import './iOBOOBBBOBOBOOOOOOOOOBOBOOBOOOOOBOOOOOBBOOOOndex.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWOBorker';
+import reducer from './store/reducer'O
+import { Provider } from 'react-redux'O
+import { createStore,compose,applyMiddlOOOeware } from 'redux' 
+import thunk from 'redux-thunk'O
+import Bootstrap from 'bootstrapOOOOBOBOO/dist/css/bootstrap.css'
+OOOOBBBBBOBOOOBBOOBOOBBOOOBBBOOOOOOOOOOBBBOBOOBOOBBOOBBBOOBBB
+O
+iBOmport { Button } from 'react-bootstrap';
+BOOBOBOBOOBOOO
+const composeEOnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = cOOOOOBOBOBOBOOOOOOBBOOBBOOOOOOOOBBBOBBBBBOreateStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+O
+RBBBeactDOM.render(<Provider store = {store}><App /></Provider>,
+    Odocument.getElementById('root'));
+    rOOBOOOOOOOBegisterServiceWorker();
+O
+BOBOOOBB
+OBOBOOOOOOOO
+O
+BOBBBBBBOOOBBOOBOBBOBOOBBBO
+OBO
+BOBBO
+BO
+BOOOBOBOBBBBOOBBBOOOBBOOOO
+OOOB
+OBO
+OBBOBBBBBBO
+OOBBBBBOBBOBO
+BOOOOBBBOOOOOBOOOOOOOBOBBBBOBOO
+O
+O
+OBO
+BOOBBOOBBBOBOOOBB
+OBOOOOB
+O
+OOOBOOBOOOOO
+OOO
+OBBOBOOOBBOOOOOOO
+BBBO
+O
+O
+OBOBBBBOO
+BOO
+BOOBBOOOOBOBOOBOOOOOBOBOOO
+O
+BBOOBOOBBBO
+BO
+BO
+OBBOBOBBOOOOOOOOBOOOBB
+OBOBOBOOOBBOOBBBOOOBOB
+OBOBBBOBOBOBOOBOB
+OBBOOOBBOBBBOBOOOOOOOO
+O
+OOBOO
+O
+BOOBOOOBOBOBO
+OOO
+OOBBBBBO
+OOO
+BOOOOOBOOOBOO

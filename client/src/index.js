@@ -7,6 +7,7 @@ import reducer from './store/reducer'
 import { Provider } from 'react-redux'
 import { createStore,compose,applyMiddleware } from 'redux' 
 import thunk from 'redux-thunk'
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
 
 
 import { Button } from 'react-bootstrap';
